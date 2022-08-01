@@ -51,9 +51,8 @@ def create_event(summary: str,
                  description: str,
                  start: str,
                  end: str,
-                 recurrence: str = 'RRULE:FREQ=DAILY;COUNT=2',
-                 attendees: str
-                ) -> dict:
+                 recurrence: str,
+                 attendees: list) -> dict:
     event = {
         'summary': summary,
         'location': location,
